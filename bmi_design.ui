@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #706969;
+color: black;
+font-family: Arial, sans-serif;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="calculate_button">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #6D227C;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+background-color: #6D227C;</string>
+    </property>
+    <property name="text">
+     <string>Calculate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weight_label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>180</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+    color: #333;</string>
+    </property>
+    <property name="text">
+     <string>Your Weight (kg)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="weight_input">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #ccc;
+border-radius: 8px;
+padding: 8px;
+font-size: 16px;
+background: white;
+selection-background-color: #007BFF;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="height_input">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #ccc;
+border-radius: 8px;
+padding: 8px;
+font-size: 16px;
+background: white;
+selection-background-color: #007BFF;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title_label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 22px;
+font-weight: bold;
+color: #000;</string>
+    </property>
+    <property name="text">
+     <string>BMI</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bmi_result_title">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>370</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+    color: #333;</string>
+    </property>
+    <property name="text">
+     <string>Your BMI</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="standard_radio_button">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>130</y>
+      <width>89</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 14px;
+    color: black;
+width: 16px;
+    height: 16px;
+    border: 2px solid #6D227C;
+    border-radius: 8px;
+    background: #6D227C;
+background: #6D227C;</string>
+    </property>
+    <property name="text">
+     <string>Standard</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="metric_radio_button">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>170</y>
+      <width>89</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 14px;
+    color: black;
+width: 16px;
+    height: 16px;
+    border: 2px solid #6D227C;
+    border-radius: 8px;
+    background: #6D227C;
+background: #6D227C;</string>
+    </property>
+    <property name="text">
+     <string>Metric</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bmi_result_label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>350</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ccc;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="underweight_label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+background-color: #FFD700;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+qproperty-alignment: AlignCenter;</string>
+    </property>
+    <property name="text">
+     <string>Underweight </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="normal_label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>470</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+qproperty-alignment: AlignCenter;</string>
+    </property>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="overweight_label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>470</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+background-color: #FFA500;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+qproperty-alignment: AlignCenter;</string>
+    </property>
+    <property name="text">
+     <string>Overweight</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="obese_label">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>470</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+background-color: #FF0000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+qproperty-alignment: AlignCenter;</string>
+    </property>
+    <property name="text">
+     <string>Obese </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="height_label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>100</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+    color: #333;</string>
+    </property>
+    <property name="text">
+     <string>Your Height (cm)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>695</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_exit"/>
+    <addaction name="action_clear"/>
+   </widget>
+   <widget class="QMenu" name="action_help">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="action_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
