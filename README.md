@@ -33,7 +33,10 @@ How to Run the Application:
 Install PyQt6 -> run main.py
 
 Screenshots
-
+![BMI Calculator Screenshot](1.png)
+![BMI Calculator Screenshot](2.png)
+![BMI Calculator Screenshot](3.png)
+![BMI Calculator Screenshot](4.png)
 
 
 
